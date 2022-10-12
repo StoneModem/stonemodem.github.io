@@ -1,0 +1,26 @@
+
+.grid-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    width: 8vw;
+    height: 8vw;
+    background-color: #ccc;
+    /* border: 1px solid black; */
+    margin: 2px;
+}
+
+
+
+.highlighted {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+.non-highlighted {
+    background-color: #ccc
+}
+
+

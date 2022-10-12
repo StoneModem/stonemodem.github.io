@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+/* * {
+  outline: 2px solid red;
+} */
+
 
 .App-header {
   background-color: #282c34;
@@ -17,4 +21,49 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+/* Flexbox lifehack to have div grow relative to sibling */
+/* https://stackoverflow.com/questions/9769587/set-div-to-have-its-siblings-width */
+.header-footer {
+  display:flex;
+  position:sticky;
+  top:0;
+  bottom:0;
+  z-index: 1000;
+  min-width: 50vw;
+}
+
+.header-footer > div {
+  flex-grow: 1;
+  width: 0;
+}
+
+.page-parent {
+  min-height: 100vh;
+  display: inline-block;
+  /* outline: 2px solid blue; */
+}
+
+.page-child {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  
+.loading-icon {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+@keyframes color-transition {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }

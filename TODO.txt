@@ -1,0 +1,7 @@
+TODO: Read this:
+
+https://stackoverflow.com/questions/42173786/react-router-pass-data-when-navigating-programmatically
+
+* Add navigation states between sites which control:
+    - Which color all the CSS_COLOR_WHEEL animations are currently in. Don't snap back.
+    - Which page settings were previously. I.e. If "apps" or "blogs" was last selected, don't default.
